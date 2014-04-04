@@ -1,0 +1,19 @@
+{
+  "name": "mbtiles-server",
+  "version": "0.0.1",
+  "description": "Simple mbtiles node server.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "3.5.1",
+    "mbtiles": "0.2.9",
+    "tilelive": "4.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StephanU/mbtiles-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/StephanU/mbtiles-server/issues"
+  },
+  "homepage": "https://github.com/StephanU/mbtiles-server"
+}
