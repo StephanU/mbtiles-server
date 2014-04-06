@@ -5,7 +5,6 @@ if (!process.argv[2]) {
 } 
 
 var express = require('express'),
-    tilelive = require('tilelive'),
     MBTiles = require('mbtiles'),
     mbFileUrl = process.argv[2],
     port = 8888,
@@ -15,8 +14,6 @@ var express = require('express'),
         console.log("Error loading mbtiles file", err);
       }
     });
-
-MBTiles.registerProtocols(tilelive);
 
 app.get('/:z/:x/:y', function(req, res) {
     var x = req.param('x'),
